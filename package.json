@@ -1,0 +1,45 @@
+{
+  "name": "code-block-generator",
+  "displayName": "Code Block Generator",
+  "description": "Generate code blocks, example, if, for, while, switch and try-catch",
+  "version": "1.52.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:code-block-generator.generateBlock"
+  ],
+  "main": "./generator.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-block-generator.generateBlock",
+        "title": "Generate Code Block",
+        "category": "Code Generator"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "code-block-generator.generateBlock",
+        "key": "ctrl+alt+v",
+        "mac": "cmd+alt+v"
+      }
+    ],
+    "menus": {
+      "command-palette": [
+        {
+          "command": "code-block-generator.generateBlock"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "code-block-generator.generateBlock",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}
