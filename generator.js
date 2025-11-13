@@ -35,7 +35,6 @@ function activate(context) {
 }
 
 function generateCodeBlock(blockType) {
-
     /*
         Generates a block of code, depending on which one the user needs.
         Parametrs:
@@ -43,10 +42,7 @@ function generateCodeBlock(blockType) {
         Return value:
             -
     */
-
     const editor = vscode.window.activeTextEditor;
-    
-
     const selection = editor.selection;
     const position = selection.active;
 

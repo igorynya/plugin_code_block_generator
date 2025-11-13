@@ -2,7 +2,9 @@
 ## General description of the project:
 - generatos.js - the main file that describes how the plugin works
 - package.json - "instructions for building" the plugin
-- main.py, main.cpp - files for test plugin
+## Supported programming languages:
+- C++
+- Python
 ## Functions:
 ### 1. activate(context)
 
